@@ -1,6 +1,6 @@
 ## Introduction
 
-Welcome to **EvalMaster**, an advanced evaluation framework leveraging the power of the Llama-Index and Llama-CPP frameworks, along with the cutting-edge **Prometheus-2** model. This project aims to provide a robust and flexible evaluation tool for assessing the performance of language models using various evaluation metrics.
+Welcome to **EvalMaster**, an advanced evaluation framework leveraging the power of the **LlamaIndex 🦙**  and Llama-CPP frameworks, along with the cutting-edge **Prometheus-2** model. This project aims to provide a robust and flexible evaluation tool for assessing the performance of **RAG system** using various evaluation metrics.
 
 ## Features
 
@@ -11,7 +11,7 @@ Welcome to **EvalMaster**, an advanced evaluation framework leveraging the power
 
 ## Project Overview
 
-This project uses the Llama-Index framework to build an evaluator based on the Prometheus-2 model. The Prometheus-2 model is loaded using the Llama-CPP framework, specifically using the gguf quantized version of prometheus-7b-v2.0 model. The data is stored in a WeaviateVectorStore, allowing for efficient querying and retrieval.
+This project uses the **LlamaIndex 🦙**  framework to build an evaluator based on the Prometheus-2 model. The **Prometheus-2** model is loaded using the **Llama-CPP** framework, specifically using the **gguf quantized version of prometheus-7b-v2.0** model. The data is stored in a **Weaviate Vector Store**, allowing for efficient querying and retrieval.
 
 ## Query Engines
 
@@ -19,11 +19,11 @@ We evaluate two types of query engines for testing purposes:
 - **Hybrid Query Engine**: Combines keyword search and similarity search for more comprehensive results.
 - **Default Query Engine**: Uses only similarity search, with options for user customization.
 
-These query engines are provided as examples; you can use any generated response from your Retrieval-Augmented Generation (RAG) system for evaluation.
+These query engines are provided as examples; you can use any generated response from your **Retrieval-Augmented Generation (RAG) system** for evaluation.
 
 ## Evaluation Functions
 
-The project demonstrates the use of Prometheus-2 with the following evaluators available in Llama-Index:
+The project demonstrates the use of **Prometheus-2** with the following evaluators available in Llama-Index:
 
 1. **Pairwise Evaluator**: Determines the preferred response between two given options.
 2. **Faithfulness Evaluator**: Ensures the response is faithful to the retrieved contexts, minimizing hallucination.
@@ -32,7 +32,7 @@ The project demonstrates the use of Prometheus-2 with the following evaluators a
 
 ## Prometheus-2 Model
 
-Prometheus-2 is designed as a powerful alternative to proprietary models like GPT-4 for fine-grained evaluation. It supports both direct assessment (absolute grading) and pairwise ranking (relative grading). Prometheus-2 is based on the Mistral-7B and Mixtral8x7B models, fine-tuned with extensive feedback data to closely mirror human and GPT-4 judgments.
+**Prometheus-2** is designed as a powerful alternative to proprietary models like **GPT-4** for fine-grained evaluation. It supports both direct assessment (absolute grading) and pairwise ranking (relative grading). **Prometheus-2** is based on the **Mistral-7B** and **Mixtral8x7B** models, fine-tuned with extensive feedback data to closely mirror human and GPT-4 judgments.
 
 ## How to Use This
 
@@ -40,7 +40,7 @@ To use this project, follow these steps:
 
 1. **Clone the repository and navigate to the project directory**:
    ```sh
-   git clone https://github.com/your-username/EvalMaster.git
+   git clone https://github.com/Kirouane-Ayoub/EvalMaster.git
    cd EvalMaster
    ```
 

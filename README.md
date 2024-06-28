@@ -1,6 +1,6 @@
-## Introduction
+## EvalMaster
 
-Welcome to **EvalMaster**, an advanced evaluation framework leveraging the power of the **LlamaIndex 🦙**  and Llama-CPP frameworks, along with the cutting-edge **Prometheus-2** model. This project aims to provide a robust and flexible evaluation tool for assessing the performance of **RAG system** using various evaluation metrics.
+Welcome to **EvalMaster**, an advanced evaluation framework leveraging the power of the **[LlamaIndex](https://docs.llamaindex.ai/en/stable/) 🦙**  and **[Llama-CPP](https://github.com/abetlen/llama-cpp-python)** frameworks, along with the cutting-edge **[Prometheus-2](https://huggingface.co/prometheus-eval/prometheus-7b-v2.0)** model. This project aims to provide a robust and flexible evaluation tool for assessing the performance of **RAG system** using various evaluation metrics.
 
 ## Features
 
@@ -11,7 +11,7 @@ Welcome to **EvalMaster**, an advanced evaluation framework leveraging the power
 
 ## Project Overview
 
-This project uses the **LlamaIndex 🦙**  framework to build an evaluator based on the Prometheus-2 model. The **Prometheus-2** model is loaded using the **Llama-CPP** framework, specifically using the **gguf quantized version of prometheus-7b-v2.0** model. The data is stored in a **Weaviate Vector Store**, allowing for efficient querying and retrieval.
+This project uses the **LlamaIndex 🦙**  framework to build an evaluator based on the Prometheus-2 model. The **Prometheus-2** model is loaded using the **Llama-CPP** framework, specifically using the **[gguf quantized version of prometheus-7b-v2.0](https://huggingface.co/vsevolodl/prometheus-7b-v2.0-GGUF)** model. The data is stored in a **[Weaviate Vector Store](https://weaviate.io/developers/weaviate)**, allowing for efficient querying and retrieval.
 
 ## Query Engines
 
@@ -25,14 +25,14 @@ These query engines are provided as examples; you can use any generated response
 
 The project demonstrates the use of **Prometheus-2** with the following evaluators available in Llama-Index:
 
-1. **Pairwise Evaluator**: Determines the preferred response between two given options.
-2. **Faithfulness Evaluator**: Ensures the response is faithful to the retrieved contexts, minimizing hallucination.
-3. **Correctness Evaluator**: Checks if the generated response matches a provided reference answer.
-4. **Relevancy Evaluator**: Assesses the relevance of the response to the given query.
+1. **[Pairwise Evaluator](https://docs.llamaindex.ai/en/stable/examples/evaluation/pairwise_eval/)**: Determines the preferred response between two given options.
+2. **[Faithfulness Evaluator](https://docs.llamaindex.ai/en/stable/examples/evaluation/faithfulness_eval/)**: Ensures the response is faithful to the retrieved contexts, minimizing hallucination.
+3. **[Correctness Evaluator](https://docs.llamaindex.ai/en/stable/examples/evaluation/correctness_eval/)**: Checks if the generated response matches a provided reference answer.
+4. **[Relevancy Evaluator](https://docs.llamaindex.ai/en/stable/examples/evaluation/relevancy_eval/)**: Assesses the relevance of the response to the given query.
 
 ## Prometheus-2 Model
 
-**Prometheus-2** is designed as a powerful alternative to proprietary models like **GPT-4** for fine-grained evaluation. It supports both direct assessment (absolute grading) and pairwise ranking (relative grading). **Prometheus-2** is based on the **Mistral-7B** and **Mixtral8x7B** models, fine-tuned with extensive feedback data to closely mirror human and GPT-4 judgments.
+**[Prometheus-2](https://arxiv.org/pdf/2405.01535)** is designed as a powerful alternative to proprietary models like **GPT-4** for fine-grained evaluation. It supports both direct assessment (absolute grading) and pairwise ranking (relative grading). **Prometheus-2** is based on the **Mistral-7B** and **Mixtral8x7B** models, fine-tuned with extensive feedback data to closely mirror human and GPT-4 judgments.
 
 ## How to Use This
 

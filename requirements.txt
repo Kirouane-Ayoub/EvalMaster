@@ -1,0 +1,7 @@
+llama-index-llms-llama-cpp==0.1.4
+llama-index==0.10.50
+llama-index-vector-stores-weaviate==1.0.0
+llama-index-llms-cohere==0.2.0
+llama-index-embeddings-cohere==0.1.9
+llama-index-readers-file==0.1.25
+python-dotenv==1.0.1
